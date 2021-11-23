@@ -1,7 +1,7 @@
 from unittest import mock
 
 import pytest
-from json2table.commands import app
+from json_to_table.commands import app
 from typer.testing import CliRunner
 
 
@@ -14,7 +14,7 @@ def test_head(monkeypatch, runner: CliRunner):
     mock_df = mock.Mock()
     mock_read = mock.Mock()
     mock_read.return_value = mock_df
-    monkeypatch.setattr("json2table.commands.pd.read_json", mock_read)
+    monkeypatch.setattr("json_to_table.commands.pd.read_json", mock_read)
 
     runner.invoke(app, ["head", "test.json", "--n", "5"])
 
@@ -26,7 +26,7 @@ def test_convert(monkeypatch, runner: CliRunner):
     mock_df = mock.Mock()
     mock_read = mock.Mock()
     mock_read.return_value = mock_df
-    monkeypatch.setattr("json2table.commands.pd.read_json", mock_read)
+    monkeypatch.setattr("json_to_table.commands.pd.read_json", mock_read)
 
     runner.invoke(app, ["convert", "test.json", "--t", "xlsx"])
 

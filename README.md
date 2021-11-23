@@ -1,13 +1,13 @@
-# JSON2Table
+# JSON-TO-Table
 
 Convert JSON File to CSV or XLSX File.
 
 ## Installation
 
-Install JSON2Table using pip:
+Install JSON-TO-Table using pip:
 
 ```bash
-pip install json2table
+pip install json-to-table
 ```
 
 ## Usage/Examples

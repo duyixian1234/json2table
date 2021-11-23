@@ -2,7 +2,7 @@
 authors = ["duyixian <duyixian1234@qq.com>"]
 description = "Convert Json File to CSV(XLSX)"
 license = "MIT"
-name = "json2table"
+name = "json_to_table"
 readme = "README.md"
 repository = "https://github.com/duyixian1234/json2table"
 version = "0.1.0"
@@ -23,7 +23,7 @@ pytest = "^6.2.5"
 pytest-cov = "^3.0.0"
 
 [tool.poetry.scripts]
-j2t = 'json2table.__main__:main'
+j2t = 'json_to_table.__main__:main'
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
@@ -43,7 +43,7 @@ disable = ["missing-docstring", "invalid-name"]
 min-public-methods = 1
 
 [tool.pytest.ini_options]
-addopts = "-ra -svv --cov=json2table"
+addopts = "-ra -svv --cov=json_to_table"
 minversion = "6.0"
 testpaths = [
   "tests",
@@ -61,7 +61,7 @@ skip_empty = true
 sort = "miss"
 
 [tool.coverage.path]
-source = "json2table"
+source = "json_to_table"
 
 [tool.black]
 line-length = 120
