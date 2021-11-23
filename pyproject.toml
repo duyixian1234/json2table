@@ -3,6 +3,8 @@ authors = ["duyixian <duyixian1234@qq.com>"]
 description = "Convert Json File to CSV(XLSX)"
 license = "MIT"
 name = "json2table"
+readme = "README.md"
+repository = "https://github.com/duyixian1234/json2table"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
